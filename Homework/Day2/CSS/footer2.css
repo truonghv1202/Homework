@@ -1,0 +1,34 @@
+.flex-container {
+  background-color: #0f1029;
+  margin-bottom: 90px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 2;
+  color: #ded8d5;
+}
+.link a {
+  color: #0f1029;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #ded8d5;
+}
+a:hover {
+  color: #6c757d;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 40px;
+  color: #91847d;
+}
+.address {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 50px;
+}

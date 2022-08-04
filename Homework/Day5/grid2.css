@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  /* Gioi han kich thuoc trong vung chua */
+  max-width: 100%;
+  /* Loai bo phan chan dong (khoang trang nho o duoi hinh anh) */
+  vertical-align: middle;
+  height: auto;
+}
+
+.container {
+  width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* Loai bo khoang trong 2 cot ngoai cung */
+  margin-left: -5px;
+  margin-right: -5px;
+
+  /* Dat khoang trong giua cac hang */
+  row-gap: 10px;
+}
+
+.row > * {
+  /* Dat khoang trong giua cac cot */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-1 {
+  flex: 0 1 8.333333%;
+}
+
+.col-2 {
+  flex: 0 1 16.666667%;
+}
+
+.col-3 {
+  flex: 0 1 25%;
+}
+
+.col-4 {
+  flex: 0 1 33.333333%;
+}
+
+.col-5 {
+  flex: 0 1 41.666667%;
+}
+
+.col-6 {
+  flex: 0 1 50%;
+}
+
+.col-7 {
+  flex: 0 1 58.333333%;
+}
+
+.col-8 {
+  flex: 0 1 66.666667%;
+}
+
+.col-9 {
+  flex: 0 1 75%;
+}
+
+.col-10 {
+  flex: 0 1 83.333333%;
+}
+
+.col-11 {
+  flex: 0 1 91.666667%;
+}
+
+.col-12 {
+  flex: 0 1 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.intro-heading {
+  font-size: 60px;
+}
+
+/* Grid System - .row/.col-x */
+/* Flex Utilities */
+
+/* Position */
+/* Ket hop position vs hover */
+
+.header {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.spa-img {
+  width: 43.4%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+}
+
+.primary-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.primary-menu a {
+  color: #263a41;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.primary-menu a:hover {
+  color: #ff817e;
+}
+
+.banner-content {
+  margin-top: 70px;
+}
+.banner-content span {
+  color: #ff817e;
+  display: block;
+  font-family: "Rufina", serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.banner-content h2 {
+  color: #1e2528;
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 25px;
+}
+
+.banner-content p {
+  margin-bottom: 50px;
+  color: #6c6c6f;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.btn {
+  background-color: #ff817e;
+  border-radius: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: uppercase;
+  min-width: 170px;
+  padding: 20px 15px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  color: #1e2528;
+}
+
+.btn-video {
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  align-items: center;
+}
+
+.btn-video i {
+  margin-right: 10px;
+}
+
+.btn-video:hover {
+  color: #ff817e;
+}

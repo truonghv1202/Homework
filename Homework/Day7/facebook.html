@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook - Đăng nhập hoặc đăng ký</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEVKbqj///5BaKWyv9afsM48ZaPS2efAyt4+ZqRHbKdGa6fm6vE6Y6NRdKvQ1+VqhrXu8fV2j7qaq8qvvNXx9PenttFgfrCLnsK9yNzJ0uKFmr9Ncand4uxwirdlgbP5+vsuXZ98lLxz4kyMAAADCUlEQVR4nO3d6W7iMBhGYWLqNg5bKBRoy1Lu/yaH0bSdkQhJ8CTN+1nn/EVIeWRCFjswmo3SLnUfEREREREREREREdGPFEJwzvnPpt7nee5cEYowCkNv2/8XLrLRZrl9WO3mn73uxqvV8/Ztudi8h8urlgu522x3+3V2q9N6P38feiuju/AO48lN3HeHYugtjStMZ6uymWdWWEwP81a8S0uL3zb++NjWZ3IMXRi392XZwpzQL9vtf19trH1K/ctdviyb2RKG/PVOYGZriUFwLQ6AloUh3A/MTJ3TFPv7gZmls+/798FLJ0NC/xABzE7OjLA4xACzdT70hrct5BHfMqaE+b1H+s9KM5fA73FAO0K/S10YO4RmhG4VK5zYEAZ3+25TQ4/ToTe+VcVbLNCK0Mecr1kShlH0hzSb2xAuo4FGhK7d+cxpcl35YuKszTffPDw9bY/B++nv/L+5oTe+TaFovLs2DlMXzFwmXRVmTcCziZ3tdo1Xhs/GgY3H+0lu9/P5J/fcMIQmvk3qarr4NXVHtDJXPxNTmjji1dYgtHHmWVuD8Cn5MdwlLxwnL3wwf7BAiNBACBHqhxChfggR6ocQoX4IEeqXJyUM/rqPeuHLR8V7/iY2pxEWjxXVz+KX86r3fLfQIrqoNaS1ic3b9CDcJi88az0z04PwkPx+KPZkVw/CY/JjKDZD3INQ7JmZHoRiT5R0L1R7oqR74VpsFXT3wlJsHUMPwuTHcJ/8GKqttuleqLYKunvha/L7odpqm+6FK60L4B6Eamv1exAmP4Zit2l6EL5pXeIjjEjsVlsPQrEbUT0I1X6AJxyfKqp/7KmsestX46FFV4W827knsWPFjdKaP6wq/TlghAj1Q4hQP4QI9UOIUD+ECPVDiFA/hAj1Q4hQP4QI9UOIUD+ECPVDiFA/hAj1Q4hQP4QI9Ut/9SVChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IbQvLM61Pyuv9hs7MRW1fw2QAJCIiIiIiIiIiIiI6EcT+5vBzpv9ArTQOB6T9LEBAAAAAElFTkSuQmCC"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="facebook.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <a style="left: 50px; top: 20px; position: relative" href="sign.html"
+      >Đăng ký facebook & Table</a
+    >
+    <div class="container flex">
+      <div class="recent">
+        <div class="logo">
+          <img
+            src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+            alt="google"
+          />
+        </div>
+
+        <div class="sign-in-recent">
+          <h1>Đăng nhập gần đây</h1>
+
+          <p class="text">Nhấp vào ảnh của bạn hoặc thêm tài khoản.</p>
+        </div>
+
+        <div class="link-recent">
+          <a
+            href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjU5MTY1Mjg2LCJjYWxsc2l0ZV9pZCI6MTMzMjk3MjM4NzAzNDMzN30%3D"
+            class="link-sub-recent"
+          >
+            <div class="container-link">
+              <div class="logo-link">
+                <i class="bi bi-plus-circle-fill"></i>
+              </div>
+            </div>
+
+            <div class="more-account">Thêm tài khoản</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="login">
+        <form action="Form-login">
+          <div class="form-field" style="padding-top: 16px">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email hoặc số điện thoại"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Mật khẩu"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <button>Đăng nhập</button>
+          </div>
+
+          <div class="link-form">
+            <a
+              href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjU5MTY1Mjg2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login"
+              >Quên mật khẩu?</a
+            >
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="new-account">
+            <a href="#" class="link-account">Tạo tài khoản mới</a>
+          </div>
+        </form>
+
+        <div class="create-page flex">
+          <a
+            href="https://www.facebook.com/pages/create/?ref_type=registration_form"
+            >Tạo Trang</a
+          >
+          <div>dành cho người nổi tiếng, thương hiệu hoặc doanh nghiệp.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

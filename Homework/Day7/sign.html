@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Facebook</title>
+    <link rel="stylesheet" href="sign.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEVKbqj///5BaKWyv9afsM48ZaPS2efAyt4+ZqRHbKdGa6fm6vE6Y6NRdKvQ1+VqhrXu8fV2j7qaq8qvvNXx9PenttFgfrCLnsK9yNzJ0uKFmr9Ncand4uxwirdlgbP5+vsuXZ98lLxz4kyMAAADCUlEQVR4nO3d6W7iMBhGYWLqNg5bKBRoy1Lu/yaH0bSdkQhJ8CTN+1nn/EVIeWRCFjswmo3SLnUfEREREREREREREdGPFEJwzvnPpt7nee5cEYowCkNv2/8XLrLRZrl9WO3mn73uxqvV8/Ztudi8h8urlgu522x3+3V2q9N6P38feiuju/AO48lN3HeHYugtjStMZ6uymWdWWEwP81a8S0uL3zb++NjWZ3IMXRi392XZwpzQL9vtf19trH1K/ctdviyb2RKG/PVOYGZriUFwLQ6AloUh3A/MTJ3TFPv7gZmls+/798FLJ0NC/xABzE7OjLA4xACzdT70hrct5BHfMqaE+b1H+s9KM5fA73FAO0K/S10YO4RmhG4VK5zYEAZ3+25TQ4/ToTe+VcVbLNCK0Mecr1kShlH0hzSb2xAuo4FGhK7d+cxpcl35YuKszTffPDw9bY/B++nv/L+5oTe+TaFovLs2DlMXzFwmXRVmTcCziZ3tdo1Xhs/GgY3H+0lu9/P5J/fcMIQmvk3qarr4NXVHtDJXPxNTmjji1dYgtHHmWVuD8Cn5MdwlLxwnL3wwf7BAiNBACBHqhxChfggR6ocQoX4IEeqXJyUM/rqPeuHLR8V7/iY2pxEWjxXVz+KX86r3fLfQIrqoNaS1ic3b9CDcJi88az0z04PwkPx+KPZkVw/CY/JjKDZD3INQ7JmZHoRiT5R0L1R7oqR74VpsFXT3wlJsHUMPwuTHcJ/8GKqttuleqLYKunvha/L7odpqm+6FK60L4B6Eamv1exAmP4Zit2l6EL5pXeIjjEjsVlsPQrEbUT0I1X6AJxyfKqp/7KmsestX46FFV4W827knsWPFjdKaP6wq/TlghAj1Q4hQP4QI9UOIUD+ECPVDiFA/hAj1Q4hQP4QI9UOIUD+ECPVDiFA/hAj1Q4hQP4QI9Ut/9SVChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IbQvLM61Pyuv9hs7MRW1fw2QAJCIiIiIiIiIiIiI6EcT+5vBzpv9ArTQOB6T9LEBAAAAAElFTkSuQmCC"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <a style="left: 50px; top: 20px; position: relative" href="facebook.html"
+      >Đăng nhập facebook</a
+    >
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="form-sign row">
+            <div class="col-12">
+              <form action="form" class="row">
+                <div class="col-12">
+                  <div class="header-form">
+                    <h1>Đăng ký</h1>
+                    <span>Nhanh chóng và dễ dàng.</span>
+                    <div class="icon-close"><i class="bi bi-x-lg"></i></div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="hr"></div>
+                </div>
+
+                <div class="col-12">
+                  <div class="sign row">
+                    <div class="col-6">
+                      <div class="form-field">
+                        <input
+                          type="text"
+                          name="surname"
+                          id="surname"
+                          placeholder="Họ"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="form-field">
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Tên"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-field">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Số di động hoặc email"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-field">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Mật khẩu mới"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="infor">
+                    <div class="form-field row">
+                      <div class="col-12 sub-birthday">
+                        <label for="birthday"
+                          >Sinh nhật <i class="bi bi-question-circle-fill"></i
+                        ></label>
+                      </div>
+
+                      <div class="col-4">
+                        <select name="day" id="day">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                        </select>
+                      </div>
+
+                      <div class="col-4">
+                        <select name="month" id="month">
+                          <option value="1">Tháng 1</option>
+                          <option value="2">Tháng 2</option>
+                          <option value="3">Tháng 3</option>
+                          <option value="4">Tháng 4</option>
+                          <option value="5">Tháng 5</option>
+                          <option value="6">Tháng 6</option>
+                          <option value="7">Tháng 7</option>
+                          <option value="8">Tháng 8</option>
+                          <option value="9">Tháng 9</option>
+                          <option value="10">Tháng 10</option>
+                          <option value="11">Tháng 11</option>
+                          <option value="12">Tháng 12</option>
+                        </select>
+                      </div>
+
+                      <div class="col-4">
+                        <select name="year" id="year">
+                          <option value="2022">2022</option>
+                          <option value="2021">2021</option>
+                          <option value="2020">2020</option>
+                          <option value="2019">2019</option>
+                          <option value="2018">2018</option>
+                          <option value="2017">2017</option>
+                          <option value="2016">2016</option>
+                          <option value="2015">2015</option>
+                          <option value="2014">2014</option>
+                          <option value="2013">2013</option>
+                          <option value="2012">2012</option>
+                          <option value="2011">2011</option>
+                          <option value="2010">2010</option>
+                          <option value="2009">2009</option>
+                          <option value="2008">2008</option>
+                          <option value="2007">2007</option>
+                          <option value="2006">2006</option>
+                          <option value="2005">2005</option>
+                          <option value="2004">2004</option>
+                          <option value="2003">2003</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="sub-gender row">
+                    <div class="col-12">
+                      <label class="information" for="Gender"
+                        >Giới tính <i class="bi bi-question-circle-fill"></i
+                      ></label>
+                    </div>
+
+                    <div class="col-35">
+                      <div class="gender">
+                        <div class="form-field">
+                          <input type="radio" name="gender" id="male" />
+                          <label for="male">Nam</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-35">
+                      <div class="gender">
+                        <div class="form-field">
+                          <input type="radio" name="gender" id="female" />
+                          <label for="female">Nữ</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-50">
+                      <div class="gender">
+                        <div class="form-field">
+                          <input type="radio" name="gender" id="other" />
+                          <label for="other">Tùy chỉnh</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="footer-form row">
+                    <div class="col-12">
+                      <div class="rules">
+                        Người dùng dịch vụ của chúng tôi có thể đã tải thông tin
+                        liên hệ của bạn lên Facebook.
+                        <a href="https://www.facebook.com/help/637205020878504"
+                          >Tìm hiểu thêm.</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="rules">
+                        Bằng cách nhấp vào Đăng ký, bạn đồng ý với
+                        <a href="https://www.facebook.com/legal/terms/update"
+                          >Điều khoản</a
+                        >,<a
+                          href="https://www.facebook.com/about/privacy/update"
+                          >Chính sách quyền riêng tư
+                        </a>
+                        và
+                        <a href="https://www.facebook.com/policies/cookies/">
+                          Chính sách cookie</a
+                        >
+                        của chúng tôi. Bạn có thể nhận được thông báo của chúng
+                        tôi qua SMS và hủy nhận bất kỳ lúc nào.
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="register">
+                        <button type="submit">Đăng ký</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="table-demo">
+            <table>
+              <caption>
+                Demo Table
+              </caption>
+
+              <thead>
+                <tr>
+                  <th class="name">Name</th>
+                  <th class="location">Location</th>
+                  <th class="email">Email</th>
+                  <th class="phone">Phone number</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="name">
+                    <img
+                      src="https://vnreview.vn/image/12/29/122965.jpg"
+                      alt="chân dung"
+                    />
+                    Logan Henderson
+                  </td>
+                  <td class="location">Chicago, IL</td>
+                  <td class="email">logan@company.com</td>
+                  <td class="phone">938-283-9277</td>
+                </tr>
+
+                <tr>
+                  <td class="name">
+                    <img
+                      src="https://vnreview.vn/image/12/29/122965.jpg"
+                      alt="chân dung"
+                    />
+                    Susie Calson
+                  </td>
+                  <td class="location">New York, NY</td>
+                  <td class="email">susie@company.com</td>
+                  <td class="phone">394-938-9277</td>
+                </tr>
+
+                <tr>
+                  <td class="name">
+                    <img
+                      src="https://vnreview.vn/image/12/29/122965.jpg"
+                      alt="chân dung"
+                    />
+                    Markus Benes
+                  </td>
+                  <td class="location">Chicago, IL</td>
+                  <td class="email">markus@company.com</td>
+                  <td class="phone">872-933-1029</td>
+                </tr>
+
+                <tr>
+                  <td class="name">
+                    <img
+                      src="https://vnreview.vn/image/12/29/122965.jpg"
+                      alt="chân dung"
+                    />
+                    Marie Stephens
+                  </td>
+                  <td class="location">Boston, MA</td>
+                  <td class="email">marie@company.com</td>
+                  <td class="phone">928-938-5523</td>
+                </tr>
+
+                <tr>
+                  <td class="name">
+                    <img
+                      src="https://vnreview.vn/image/12/29/122965.jpg"
+                      alt="chân dung"
+                    />
+                    Jacob Gibson
+                  </td>
+                  <td class="location">Denver, CO</td>
+                  <td class="email">jacob@company.com</td>
+                  <td class="phone">192-617-4895</td>
+                </tr>
+
+                <tr>
+                  <td class="name">
+                    <img
+                      src="https://vnreview.vn/image/12/29/122965.jpg"
+                      alt="chân dung"
+                    />
+                    Eliza Fiueroa
+                  </td>
+                  <td class="location">Burlinton, VT</td>
+                  <td class="email">elisa@company.com</td>
+                  <td class="phone">717-029-2273</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

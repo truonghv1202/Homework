@@ -1,0 +1,38 @@
+body {
+  color: #fff;
+  background-color: #26588f;
+  text-align: center;
+}
+.link {
+  color: #fff;
+}
+
+h1 {
+  font-size: 40px;
+  color: antiquewhite;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+
+  background-color: #26588f;
+  color: #fff;
+  line-height: 2;
+}
+.flex-container > div {
+  width: 25%;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #6c757d;
+  text-decoration: underline;
+}

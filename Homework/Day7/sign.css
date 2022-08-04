@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  /* Gioi han kich thuoc trong vung chua */
+  max-width: 100%;
+  /* Loai bo phan chan dong (khoang trang nho o duoi hinh anh) */
+  vertical-align: middle;
+  height: auto;
+}
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* Loai bo khoang trong 2 cot ngoai cung */
+  margin-left: -5px;
+  margin-right: -5px;
+
+  /* Dat khoang trong giua cac hang */
+  row-gap: 10px;
+}
+
+.row > * {
+  /* Dat khoang trong giua cac cot */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-1 {
+  flex: 0 1 8.333333%;
+}
+
+.col-2 {
+  flex: 0 1 16.666667%;
+}
+
+.col-3 {
+  flex: 0 1 25%;
+}
+
+.col-4 {
+  flex: 0 1 33.333333%;
+}
+
+.col-5 {
+  flex: 0 1 41.666667%;
+}
+
+.col-6 {
+  flex: 0 1 50%;
+}
+
+.col-7 {
+  flex: 0 1 58.333333%;
+}
+
+.col-8 {
+  flex: 0 1 66.666667%;
+}
+
+.col-9 {
+  flex: 0 1 75%;
+}
+
+.col-10 {
+  flex: 0 1 83.333333%;
+}
+
+.col-11 {
+  flex: 0 1 91.666667%;
+}
+
+.col-12 {
+  flex: 0 1 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.intro-heading {
+  font-size: 60px;
+}
+
+.col-35 {
+  flex: 0 1 30%;
+}
+.col-50 {
+  flex: 0 1 40%;
+}
+
+/* Grid System - .row/.col-x */
+/* Flex Utilities */
+
+/* Position */
+/* Ket hop position vs hover */
+body {
+  background: #f0f2f5;
+}
+.form-sign {
+  width: 432px;
+  position: relative;
+  background-color: #fff;
+  padding: 16px;
+}
+
+h1 {
+  color: #1c1e21;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.header-form span {
+  color: #606770;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.icon-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.hr {
+  border-bottom: 1px solid #dadde1;
+}
+
+input {
+  width: 100%;
+
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #dddfe2;
+}
+
+.form-field input:focus {
+  background-color: #fafcff;
+  outline: none;
+  border: 1px solid #dddfe2;
+}
+
+label {
+  color: #606770;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+
+  margin-top: 2px;
+}
+
+.information {
+  margin-bottom: 0px;
+}
+
+select {
+  width: 100%;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dadde1;
+}
+
+select:focus {
+  background-color: #fafcff;
+  outline: none;
+  border: 1px solid #dddfe2;
+}
+
+.gender {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #dadde1;
+  position: relative;
+  height: 40px;
+}
+
+.gender input {
+  position: absolute;
+  top: 15px;
+  left: 40%;
+}
+
+.gender label {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  height: 40px;
+  color: #1c1e21;
+
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+}
+
+.infor,
+.sub-gender {
+  position: relative;
+}
+
+.infor {
+  margin-top: 20px;
+}
+
+.sub-gender {
+  margin-top: 5px;
+}
+
+.sub-birthday {
+  position: absolute;
+  bottom: 40px;
+}
+
+.information {
+  position: absolute;
+  top: -10px;
+}
+
+.footer-form {
+  color: #777;
+  font-size: 12px;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+}
+
+.footer-form a {
+  text-decoration: none;
+  color: #385898;
+}
+
+.footer-form a:hover {
+  text-decoration: underline;
+}
+
+.register {
+  padding: 7px 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 600;
+  height: 36px;
+  overflow: hidden;
+  padding: 0 32px;
+  text-shadow: none;
+  background: none;
+  background-color: #00a400;
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #fff;
+  min-width: 194px;
+}
+
+table {
+  font-size: 12px;
+  text-align: left;
+  width: 100%;
+  border: 1px solid rgb(159, 148, 148);
+}
+
+.name,
+.email {
+  width: 30%;
+  padding: 10px 5px;
+}
+
+.phone {
+  width: 20%;
+  padding: 10px 5px;
+}
+
+.location {
+  width: 20%;
+  padding: 10px 5px;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+caption {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+thead {
+  font-size: 13px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(149, 140, 140, 0.1);
+}

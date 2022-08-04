@@ -1,0 +1,500 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #333;
+}
+.container {
+  width: 1310px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Open Sans, sans-serif;
+}
+
+.title {
+  margin-bottom: 10px;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
+.title a {
+  color: #1ab394;
+  font-size: 25px;
+  position: relative;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: rgb(35, 198, 200);
+}
+
+.title h1 {
+  font-size: 25px;
+  font-family: Open Sans, sans-serif;
+}
+
+.title h2 {
+  font-size: 25px;
+  font-family: Open Sans, sans-serif;
+}
+
+.icon {
+  margin-left: 20px;
+  position: absolute;
+  top: 1px;
+}
+
+/* TẬP MỚI NHẤT */
+.list-latest {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.link-latest {
+  width: 320px;
+
+  margin-bottom: 10px;
+  height: 180px;
+  position: relative;
+}
+
+.thumbnail-latest img {
+  width: 100%;
+  height: 100%;
+}
+
+.description-latest {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 15px 10px;
+  width: 100%;
+  background: transparent;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+
+.meta-latest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-latest {
+  color: #ccc;
+  font-family: Open Sans, sans-serif;
+  line-height: 1.5;
+}
+
+.name-latest {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.episode-latest {
+  width: 60%;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.meta-latest {
+  font-size: 12px;
+}
+
+/* css Tin anime */
+.list-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.link-news {
+  width: 320px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.link-news-anime {
+  display: flex;
+  color: #1ab394;
+  text-decoration: none;
+}
+
+.thumbnail-news img {
+  width: 150px;
+}
+
+.description-news {
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+}
+
+/* CSS Phim hoạt hình */
+.list-anime {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link-anime {
+  width: calc((100% - 30px) / 4);
+  overflow: hidden;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: Open Sans, sans-serif;
+}
+
+.thumbnail-anime img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.description-anime {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 15px 10px;
+  color: #eee;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  width: 100%;
+}
+
+.name-anime {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.view-anime {
+  font-size: 12px;
+}
+
+/* CSS Truyen tranh */
+.list-comic {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-comic {
+  width: calc((100% - 50px) / 6);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail-comic img {
+  width: 100%;
+  height: 100%;
+}
+
+.name-comic {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 30px 10px 10px;
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+}
+
+.chap-comic {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 0 5px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+/* CSS Bộ sưu tập */
+.list-collection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-collection {
+  width: calc((100% - 30px) / 4);
+  object-fit: cover;
+}
+
+.thumbnail-collection img {
+  width: 100%;
+  height: 100%;
+}
+/* CSS Anime movie */
+.list-movie {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.link-movie {
+  overflow: hidden;
+  position: relative;
+  width: 210px;
+  height: 290px;
+}
+
+.thumbnail-movie img {
+  width: 100%;
+  height: 100%;
+}
+
+.description-movie {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 15px 10px;
+  font-family: Open Sans, sans-serif;
+  color: #eee;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  line-height: 1.5;
+}
+
+.name-movie {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.view-movie {
+  font-size: 12px;
+}
+
+/* CSS HÔM NAY XEM GÌ */
+.list-today {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.link-today {
+  width: calc((100% - 30px) / 4);
+  overflow: hidden;
+  height: 180px;
+  position: relative;
+}
+
+.link-today a {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail-today img {
+  width: 100%;
+  height: 100%;
+}
+
+.description-today {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 15px 10px;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  width: 100%;
+
+  font-family: Open Sans, sans-serif;
+  color: #eee;
+}
+
+.name-today {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.view-today {
+  font-size: 12px;
+}
+
+/* CSS bảng xếp hạng */
+.list-charts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-charts {
+  height: 95px;
+  width: 210px;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail-charts img {
+  width: 100%;
+  height: 100%;
+}
+
+.description-charts {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: 100%;
+}
+
+.name-charts {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.number-charts {
+  position: absolute;
+  right: 5px;
+  bottom: -55px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* CSS TẤT CẢ ANIME */
+.list-all {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.link-all {
+  width: calc((100% - 30px) / 4);
+  position: relative;
+}
+
+.thumbnail-all img {
+  width: 100%;
+  height: 100%;
+}
+
+.description-all {
+  position: absolute;
+  bottom: 0;
+  color: #eee;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  width: 100%;
+  padding: 30px 15px 10px;
+  font-family: Open Sans, sans-serif;
+  line-height: 1.5;
+}
+
+.name-all {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.view-all {
+  font-size: 12px;
+}
+.see-more {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.see-more a {
+  width: 76px;
+  height: 20px;
+  background: #1ab394;
+  border-radius: 2px;
+  clear: both;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.item-play-button {
+  font-size: 50px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0 10px #fff;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.link-latest {
+  position: relative;
+}
+
+/* Chỉ áp dụng css khi mà thẻ cha .link-latest có trạng thái hover */
+.link-latest:hover .item-play-button {
+  display: block;
+}
+
+.link-latest:hover .thumbnail-latest img {
+  transform: scale(1.2);
+}
+
+.thumbnail-latest {
+  overflow: hidden;
+}
