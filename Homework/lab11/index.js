@@ -7,7 +7,17 @@
  *
  * @return {number} Số lớn nhất trong 3 số
  */
-function maxOfThree(a, b, c) {}
+function maxOfThree(a, b, c) {
+  if (a <= c && b <= c) {
+    return c;
+  } else if (a <= b && c <= b) {
+    return b;
+  } else if (b <= a && c <= a) {
+    return a;
+  }
+}
+
+console.log("Max = " + maxOfThree(3, 56, 34));
 
 /**
  * Tìm mùa tương ứng với tháng
@@ -21,8 +31,56 @@ function maxOfThree(a, b, c) {}
  *
  * @return {number} Mùa tương ứng với tháng (Winter | Spring | Summer | Fall)
  */
-function findSeason(month) {}
+function findSeason(month) {
+  let season;
+  switch (month) {
+    case 12:
+    case 1:
+    case 2:
+      season = "Winter";
+      return season;
 
+    case 3:
+    case 4:
+    case 5:
+      season = "Spring";
+      return season;
+
+    case 6:
+    case 7:
+    case 8:
+      season = "Summer";
+      return season;
+
+    case 9:
+    case 10:
+    case 11:
+      season = "Fall";
+      return season;
+
+    default:
+      return NaN;
+  }
+
+  // if (month == 12 || month == 1 || month == 2) {
+  //   season = "Winter";
+  //   return mua;
+  // } else if (month == 3 || month == 4 || month == 5) {
+  //   season = "Spring";
+  //   return mua;
+  // } else if (month == 6 || month == 7 || month == 8) {
+  //   season = "Summer";
+  //   return mua;
+  // } else if (month == 9 || month == 10 || month == 11) {
+  //   season = "Fall";
+  //   return mua;
+  // } else {
+  //   return NaN;
+  // }
+}
+console.log(findSeason(8));
+console.log(findSeason(2));
+console.log(findSeason(15));
 /**
  * Kiểm tra xem một năm có phải năm nhuận hay không
  *
@@ -38,9 +96,15 @@ function findSeason(month) {}
  * @return {boolean} Năm này có phải năm nhuận hay không
  */
 function isLeafYear(year) {
-  return year % 4 == 0;
+  if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+console.log(isLeafYear(2000));
+console.log(isLeafYear(2100));
 
 /**
  * Tìm số ngày trong tháng
@@ -54,16 +118,90 @@ function isLeafYear(year) {
  *
  * @return {number} Số ngày trong tháng đó
  */
-function findDayOfMonth(month, year) {}
+function findDayOfMonth(month, year) {
+  let day;
+  switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+      day = 31;
+      return day;
 
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      day = 30;
+      return day;
+
+    case 2:
+      if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        day = 29;
+      } else {
+        day = 28;
+      }
+      return day;
+
+    default:
+      return NaN;
+  }
+}
+
+console.log("Tháng có " + findDayOfMonth(2, 2021) + " ngày");
+console.log("Tháng có " + findDayOfMonth(2, 2020) + " ngày");
+console.log("Tháng có " + findDayOfMonth(8, 2020) + " ngày");
 /**
  * Xếp loại sinh viên theo số điểm trung bình
  *
  * @param {number} point Điểm trung bình của sinh viên
  *
  * @return {'A' | 'B' | 'C' | 'D' | 'F'} Xếp hạng tốt nghiệp của sinh viên
+ * < 4 F
+ * < 5.5 D
+ * < 7.0 C
+ * < 8.5 B
+ * < 10 A
  */
-function calcGrade(point) {}
+function calcGrade(point) {
+  return point < 4
+    ? "F"
+    : 4 <= point && point < 5.5
+    ? "D"
+    : 5.5 <= point && point < 7.0
+    ? "C"
+    : 7 <= point && point < 8.5
+    ? "B"
+    : 8.5 <= point && point <= 10
+    ? "A"
+    : NaN;
+  // let classification;
+  // if (point < 4) {
+  //   classification = "F";
+  //   return classification;
+  // } else if (4 <= point && point < 5.5) {
+  //   classification = "D";
+  //   return classification;
+  // } else if (5.5 <= point && point < 7.0) {
+  //   classification = "C";
+  //   return classification;
+  // } else if (7 <= point && point < 8.5) {
+  //   classification = "B";
+  //   return classification;
+  // } else if (8.5 <= point && point <= 10) {
+  //   classification = "A";
+  //   return classification;
+  // } else {
+  //   return NaN;
+  // }
+}
+
+console.log(calcGrade(3));
+console.log(calcGrade(10));
+console.log(calcGrade(11));
 
 /**
  * Tính tiền cước taxi cho khách theo số kilomet đã di chuyển
@@ -77,10 +215,21 @@ function calcGrade(point) {}
  *
  * @return {number} Số tiền phải trả
  */
-function calcTaxiFee(km) {}
+function calcTaxiFee(km) {
+  return km <= 30 && km > 0
+    ? 10_000 + km * 11_000
+    : km > 30
+    ? (km - 30) * 9_500 + 30 * 11_000 + 10_000
+    : "0";
+}
+
+console.log(calcTaxiFee(14) + " đ");
+console.log(calcTaxiFee(50) + " đ");
+console.log(calcTaxiFee(70) + " đ");
+console.log(calcTaxiFee(-2) + " đ");
 
 /**
- * Tìm nghiệm phương trình bậc 2 ax^2 + bx + c = 0
+ * Tìm nghiệm phương trình bậc 2: ax^2 + bx + c = 0
  *
  * - Nếu phương trình có vô số nghiệm thì trả về `Infinity`
  * - Nếu phương trình vô nghiệm thì trả về `null`
@@ -93,4 +242,27 @@ function calcTaxiFee(km) {}
  *
  * @return {number | [number, number] | null} Nghiệm phương trình
  */
-function solveEquation(a, b, c) {}
+function solveEquation(a, b, c) {
+  let delta = Math.pow(b, 2) - 4 * a * c;
+  if (a == 0) {
+    return Math.round((-c / b) * 100) / 100;
+  } else {
+    if (delta < 0) {
+      return null;
+    } else if (delta == 0) {
+      return Math.round((-b / (2 * a)) * 100) / 100;
+    } else {
+      return [
+        Math.round(((-b + Math.sqrt(delta, 2)) / (2 * a)) * 100) / 100,
+        Math.round(((-b - Math.sqrt(delta, 2)) / (2 * a)) * 100) / 100,
+      ];
+    }
+  }
+}
+
+console.log(solveEquation(0, 5, 4));
+console.log(solveEquation(1, -4, 4));
+console.log(solveEquation(3, 4, 5));
+console.log(solveEquation(3, -5, 0));
+console.log(solveEquation(-2, 3, 5));
+console.log(solveEquation(2, 0, -8));
