@@ -55,3 +55,23 @@ console.log(isPalindrome(str));
 console.log(isPalindrome(str1));
 
 // Bài 4: Viết hàm truyền vào 2 chuỗi, kiểm tra xem chuỗi thứ nhất có chứa toàn bộ ký tự (tính cả dấu cách) nằm trong chuỗi thứ 2 hay không, kết quả trả về true nếu có và false nếu không (không phân biệt hoa thường). Ví dụ ''HELLO world'' có chứa ''how'' nhưng không chứa ''hey'' và không chứa ''ww''.
+console.log("--- Nằm trong chuỗi ---");
+function insideString(str, sub) {
+  let newStr = str.toLowerCase();
+  let newSub = sub.toLowerCase();
+
+  for (let i = 0; i < newSub.length - 1; i++) {
+    for (let j = 1; j < newSub.length; j++)
+      if (newStr.includes(newSub[i]) && newStr.includes(newSub[j + 1])) {
+        return true;
+      } else {
+        return false;
+      }
+  }
+}
+
+console.log(insideString("HELLO world", "how"));
+console.log(insideString("HELLO world", "hey"));
+console.log(insideString("HELLO world", "ww"));
+console.log(insideString("HELLO world", "llo"));
+console.log(insideString("HELLO world", "dd llo"));
