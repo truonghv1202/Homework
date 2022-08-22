@@ -32,14 +32,20 @@ console.log(LastSecond("09:20:56", 7));
 // Bài 2: Một con ốc sên leo từ đáy giếng lên miệng giếng, biết ban ngày leo được x mét, ban đêm lại bị tụt xuống y mét, hỏi sau bao nhiêu ngày thì ốc sên sẽ lên được đến miệng giếng. Viết hàm giải bài toán trên với 3 tham số h > 0 là chiều cao của giếng, x và y như mô tả trên (x > 0, y > 0).
 
 function snail(h, x, y) {
-  let day = x - y;
+  // let day = x - y;
+  let countDay = 1;
+  let countNight = 0;
 
   if (h > 0 && x > 0 && y > 0 && x > y) {
-    return h / day;
+    while (h > countDay * x - countNight * y) {
+      countDay++;
+      countNight++;
+    }
+    return "Mất " + countDay + " ngày, " + countNight + " đêm";
   } else return NAN;
 }
-console.log(snail(20, 4, 3));
-
+console.log(snail(10, 4, 3));
+console.log(snail(4, 4, 3));
 // Bài 3: Cho 1 số nguyên dương, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất (giữ nguyên số chữ số). Ví dụ với tham số 530751 thì kết quả là 103557.
 function sortNumber(n) {
   let arr = [];
