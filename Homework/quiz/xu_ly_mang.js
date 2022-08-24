@@ -55,7 +55,7 @@ console.log("\n");
 // Bài 4: Cho 2 số nguyên dương m và n. Tạo ra 1 mảng 2 chiều m x n là các số nguyên liên tiếp (tính từ 1) theo kiểu ziczac. Ví dụ với m = 3 và n = 4 thì kết quả là mảng 2 chiều như sau                 [ [1, 2, 3, 4], [8, 7, 6, 5], [9, 10, 11, 12] ].
 console.log("--- Matrix ---");
 function matrix(m, n) {
-  let arr = [];
+  let arr = [100][100];
   for (let i = 0; i < m; i++) {
     for (let j = 0; i < n; j++) {
       if (i + j >= 0 && i + j <= n - 1)
