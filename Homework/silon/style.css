@@ -1,0 +1,494 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nav-item a {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-link {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+.header-top {
+  background-color: #fef7f6;
+  padding: 10px 0;
+}
+
+.header-bottom {
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-top {
+    display: none;
+  }
+}
+
+.text-left a,
+.text-right a {
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* Banner */
+
+.banner {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0;
+  background-image: url(https://demoda.vn/wp-content/uploads/2022/02/background-banner-mau-hong.jpg);
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.banner-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.banner-content span,
+.banner-content h1,
+.banner-content a {
+  text-transform: uppercase;
+}
+
+.banner-content span {
+  color: #565656;
+  font-weight: 500;
+  line-height: 0.8;
+  letter-spacing: 2.8px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 70px;
+  margin-bottom: 45px;
+}
+
+.btn-default1 {
+  background-color: #c89f9f;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 0.8;
+  min-width: 170px;
+  padding: 20px 25px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.btn-default1:hover {
+  text-decoration: none;
+  outline: 0px;
+  color: #0056b3;
+  background-color: #fff;
+  box-shadow: 0 0 30px 5px rgb(0 0 0 / 5%);
+  transition: all 300ms ease-in-out;
+}
+
+.banner-img img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* FEATURED PRODUCT */
+
+h3 {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #000;
+  font-weight: 700;
+}
+
+.h3 {
+  margin-top: 40px;
+}
+.product-thumb {
+  position: relative;
+}
+
+.action-links {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 300ms ease;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon {
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+  transition: all 300ms ease-in-out;
+}
+
+.product-item:hover .action-links {
+  opacity: 1;
+  visibility: visible;
+}
+
+.action-links .icon:hover {
+  background-color: #ff5353;
+  color: #fff;
+}
+
+.product-content {
+  margin-top: 30px;
+}
+
+.product-name a {
+  text-decoration: none;
+  color: #888;
+}
+
+.product-name a:hover {
+  color: #ff5353;
+}
+
+.product-thumb img {
+  width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+.price {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+/* banner-sale */
+
+.banner-content h2,
+.banner-content h4,
+.banner-content a {
+  text-transform: uppercase;
+}
+
+.banner-content h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  margin-bottom: 33px;
+}
+
+.banner-content h4 {
+  font-weight: 300;
+  margin-bottom: 54px;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+.banner-sale {
+  background-image: url(https://pkmacbook.com/wp-content/uploads/2021/06/blue-banner-gradient_060830468.png);
+}
+/* MOST POPULAR */
+
+.owl-nav,
+.owl-dots {
+  display: none;
+}
+
+.product-carouse .item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+h3 {
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+}
+
+/* features */
+
+.features {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.featureBox {
+  border: 1px solid #ebeef0;
+  position: relative;
+  padding: 25px;
+  text-align: center;
+}
+
+.featureBox .feat-icon {
+  max-width: 56px;
+  margin: 0 auto 27px;
+}
+
+.featureBox h4 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.featureBox p {
+  margin-bottom: 0;
+  color: #888;
+  line-height: 18px;
+}
+
+/* trending-products */
+
+/* Blog */
+
+.post-content {
+  margin-top: 20px;
+}
+
+.post-content a {
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  color: #ff5353;
+}
+
+.date {
+  font-size: 13px;
+  color: #888;
+  line-height: 18px;
+}
+
+.post-title {
+  padding-bottom: 15px;
+}
+
+.post-item .post-title a {
+  color: #000;
+}
+
+.meta-tags {
+  padding-bottom: 40px;
+}
+
+.meta-tags a {
+  color: #888;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* instagram */
+
+.instagram a:hover i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.instagram a i {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.instagram {
+  padding-bottom: 40px;
+}
+
+/* footer */
+.footer {
+  background-color: #e9e2d8;
+}
+
+.foo-top {
+  padding: 80px 15px;
+  border-bottom: 1px solid #d6d8d9;
+}
+
+.footer .widget .widget-title {
+  margin-bottom: 25px;
+}
+
+.widget .widget-title {
+  font-size: 16px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  left: -32px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #888;
+  line-height: 30px;
+}
+
+ul li a:hover {
+  color: #ff5353;
+}
+
+.app-btn {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d6d8d9;
+  padding-bottom: 30px;
+}
+
+.app-btn a {
+  -ms-flex-preferred-size: 49%;
+  flex-basis: 49%;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  border-radius: 5px;
+  padding-left: 20px;
+  background-color: #fff;
+  position: relative;
+
+  text-decoration: none;
+}
+
+.app-btn a:hover {
+  background-color: #ff5353;
+}
+
+.app-btn a:hover i,
+.app-btn a:hover p,
+.app-btn a:hover span {
+  color: #fff;
+}
+
+.app-btn a i {
+  color: #ff5353;
+  font-size: 20px;
+
+  transform: translateY(-50%);
+}
+
+.app-btn a p {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.app-btn a p span {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #4a4a4a;
+  line-height: 0.8;
+  margin-bottom: 5px;
+}
+
+.google-play i,
+.app-store i {
+  position: relative;
+  left: -8px;
+  top: 12px;
+}
+
+.social-media a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.widget-social .social-media a {
+  background-color: #fff;
+  line-height: 32px;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+}
+
+.social-media a {
+  display: inline-block;
+  font-size: 14px;
+  color: #000;
+}
+
+.widget-social .social-media a:hover {
+  background-color: #ff5353;
+  color: #fff;
+}
+
+.footer .copyright {
+  padding: 20px 0;
+  text-align: center;
+  color: #888;
+  margin-bottom: 0;
+}
+
+.footer .copyright a {
+  color: #ff5353;
+  text-decoration: none;
+}

@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silon</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+      });
+    </script>
+
+    <div class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="text-left d-flex">
+                <a href="#" class="phone">Phone: +01 256 25 235</a>
+                <a href="#" class="email">Email: info@eiser.com</a>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="text-right d-flex justify-content-end">
+                <a href="#">gift card</a>
+                <a href="#">track order</a>
+                <a href="#">language </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="navbar navbar-expand-lg bg-white">
+          <div class="container">
+            <div class="navbar-brand">
+              <img
+                src="https://demo.themeies.com/silon/images/logo.png"
+                alt="Silon"
+                class="navbar-logo"
+              />
+            </div>
+
+            <button
+              class="navbar-toggler ms-auto"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-menu"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+
+            <div
+              class="navbar-collapse flex-grow-0 text-uppercase collapse position-lg-absolute order-2 order-md-1 top-100 start-0 end-0"
+              id="navbar-menu"
+            >
+              <ul class="nav flex-column flex-md-row align-items-lg-center">
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      class="btn btn-link dropdown-toggle text-uppercase text-decoration-none text-dark"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Home
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Menu 1</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Menu 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="navbar-feature order-1 order-md-2 d-flex align-items-center gap-4 gap-md-2"
+            >
+              <button class="btn btn-default">
+                <i class="bi bi-search"></i>
+              </button>
+
+              <a class="position-relative d-inline-block p-1">
+                <i class="bi bi-cart2 bg"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded bg-danger"
+                >
+                  0
+                </span>
+              </a>
+
+              <a class="position-relative d-inline-block p-1">
+                <i class="bi bi-heart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded bg-danger"
+                >
+                  0
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="banner">
+        <div class="container-fluid">
+          <div class="row align-items-center text-center">
+            <div class="banner-content col-md-6 order-1 order-md-0">
+              <span>ultimate collection</span>
+
+              <h1>Complete Women Fashion Here</h1>
+
+              <a href="#" class="btn-default1">shop now</a>
+            </div>
+
+            <div class="banner-img col-md-6 order-0 order-md-1">
+              <img
+                src="https://demo.themeies.com/silon/images/ban-1.png"
+                alt="logo banner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feat-product text-center m-3">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="h3 m-5">
+                <h3>Featured product</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/1.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/2.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/3.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-sale">
+        <div class="container-fluid">
+          <div class="row align-items-center text-center">
+            <div class="banner-content col-md-6">
+              <h2>50% off</h2>
+
+              <h4>all women’s collection</h4>
+
+              <a href="#" class="btn-default1">shop now</a>
+            </div>
+
+            <div class="banner-img col-md-6">
+              <img
+                src="https://demo.themeies.com/silon/images/ban-2.png"
+                alt="logo banner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-products text-center">
+        <div class="container">
+          <div class="h3 m-5">
+            <h3>Most popular</h3>
+          </div>
+
+          <div class="product-carousel owl-carousel owl-theme">
+            <div class="item">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/4.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/5.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/6.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/7.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/4.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/5.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/6.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/7.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/4.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/5.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/6.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="product-item">
+                  <div class="product-thumb">
+                    <img
+                      src="https://demo.themeies.com/silon/images/products/7.jpg"
+                      alt="Silon"
+                    />
+
+                    <div class="action-links">
+                      <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                      <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="product-content">
+                    <div class="product-name">
+                      <a href="#">Red Women Purses</a>
+                    </div>
+
+                    <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                    <div class="price">$35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="featureBox text-center">
+                <img
+                  src="https://demo.themeies.com/silon/images/feature-icons/1.png"
+                  alt="Cash"
+                  class="feat-icon"
+                />
+
+                <h4>Money back gurantee</h4>
+
+                <p>Great fill signs he evening</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="featureBox text-center">
+                <img
+                  src="https://demo.themeies.com/silon/images/feature-icons/2.png"
+                  alt="Cash"
+                  class="feat-icon"
+                />
+
+                <h4>Free Delivery</h4>
+
+                <p>Great fill signs he evening</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="featureBox text-center">
+                <img
+                  src="https://demo.themeies.com/silon/images/feature-icons/3.png"
+                  alt="Cash"
+                  class="feat-icon"
+                />
+
+                <h4>Alway support</h4>
+
+                <p>Great fill signs he evening</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="featureBox text-center">
+                <img
+                  src="https://demo.themeies.com/silon/images/feature-icons/4.png"
+                  alt="Cash"
+                  class="feat-icon"
+                />
+
+                <h4>Secure payment</h4>
+
+                <p>Great fill signs he evening</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trending-products text-center">
+        <div class="container">
+          <div class="h3 m-5">
+            <h3>Trending products</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/8.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/9.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/10.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/11.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/12.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/13.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/14.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item">
+                <div class="product-thumb">
+                  <img
+                    src="https://demo.themeies.com/silon/images/products/15.jpg"
+                    alt="Silon"
+                  />
+
+                  <div class="action-links">
+                    <a href="#" class="icon"><i class="bi bi-eye"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="icon"><i class="bi bi-cart2"></i></a>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="product-name">
+                    <a href="#">Red Women Purses</a>
+                  </div>
+
+                  <div class="ratings">⭐⭐⭐⭐⭐</div>
+
+                  <div class="price">$35</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="container">
+          <div class="h3 m-5">
+            <h3>silon journal</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="post-item">
+                <img
+                  src="https://demo.themeies.com/silon/images/post/1.jpg"
+                  alt="blog"
+                />
+
+                <div class="post-content">
+                  <a href="#" class="post-meta date">
+                    <i class="bi bi-calendar-minus"></i>
+                    07 July, 2019
+                  </a>
+
+                  <h4 class="post-title">
+                    <a href="#"
+                      >Were divided land his creature which have evening
+                      subdue</a
+                    >
+                  </h4>
+
+                  <hr />
+
+                  <div class="meta-tags d-flex justify-content-around">
+                    <a href="#" class="post-meta category">
+                      <i class="bi bi-box-seam"></i>
+                      Women Fashion
+                    </a>
+
+                    <a href="#" class="post-meta comments">
+                      <i class="bi bi-chat-text"></i>
+                      2 Comments
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="post-item">
+                <img
+                  src="https://demo.themeies.com/silon/images/post/2.jpg"
+                  alt="blog"
+                />
+
+                <div class="post-content">
+                  <a href="#" class="post-meta date">
+                    <i class="bi bi-calendar-minus"></i>
+                    07 July, 2019
+                  </a>
+
+                  <h4 class="post-title">
+                    <a href="#"
+                      >Were divided land his creature which have evening
+                      subdue</a
+                    >
+                  </h4>
+
+                  <hr />
+
+                  <div class="meta-tags d-flex justify-content-around">
+                    <a href="#" class="post-meta category">
+                      <i class="bi bi-box-seam"></i>
+                      Women Fashion
+                    </a>
+
+                    <a href="#" class="post-meta comments">
+                      <i class="bi bi-chat-text"></i>
+                      2 Comments
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="post-item">
+                <img
+                  src="https://demo.themeies.com/silon/images/post/3.jpg"
+                  alt="blog"
+                />
+
+                <div class="post-content">
+                  <a href="#" class="post-meta date">
+                    <i class="bi bi-calendar-minus"></i>
+                    07 July, 2019
+                  </a>
+
+                  <h4 class="post-title">
+                    <a href="#"
+                      >Were divided land his creature which have evening
+                      subdue</a
+                    >
+                  </h4>
+
+                  <hr />
+
+                  <div class="meta-tags d-flex justify-content-around">
+                    <a href="#" class="post-meta category">
+                      <i class="bi bi-box-seam"></i>
+                      Women Fashion
+                    </a>
+
+                    <a href="#" class="post-meta comments">
+                      <i class="bi bi-chat-text"></i>
+                      2 Comments
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="instagram text-center">
+        <div class="container">
+          <div class="h3 m-5">
+            <h3>follow us</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://demo.themeies.com/silon/images/instagram/1.jpg"
+                  alt="instagram"
+                />
+
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://demo.themeies.com/silon/images/instagram/2.jpg"
+                  alt="instagram"
+                />
+
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://demo.themeies.com/silon/images/instagram/3.jpg"
+                  alt="instagram"
+                />
+
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://demo.themeies.com/silon/images/instagram/4.jpg"
+                  alt="instagram"
+                />
+
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container foo-top">
+        <div class="row">
+          <div class="col-md-2 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">About us</h4>
+
+              <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Become a supplier</a></li>
+                <li><a href="#">Investor relations</a></li>
+                <li><a href="#">Our devices</a></li>
+                <li><a href="#">Affiliate program</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-2 offset-md-1 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Useful links</h4>
+
+              <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Become a supplier</a></li>
+                <li><a href="#">Investor relations</a></li>
+                <li><a href="#">Our devices</a></li>
+                <li><a href="#">Affiliate program</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-2 offset-md-1 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Online shopping</h4>
+
+              <ul>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Work with us</a></li>
+                <li><a href="#">Become a supplier</a></li>
+                <li><a href="#">Investor relations</a></li>
+                <li><a href="#">Our devices</a></li>
+                <li><a href="#">Affiliate program</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 offset-md-1 col-sm-6">
+            <div class="widget widget-app">
+              <h4 class="widget-title">experience app on mobile</h4>
+
+              <div class="app-btn">
+                <a href="#" class="google-play d-flex">
+                  <i class="bi bi-android2"></i>
+
+                  <p>
+                    <span>get it on</span>
+                    Google play
+                  </p>
+                </a>
+
+                <a href="#" class="app-store d-flex">
+                  <i class="bi bi-apple"></i>
+
+                  <p>
+                    <span>get it on</span>
+                    App store
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="widget widget-social">
+              <h4 class="widget-title">Online shopping</h4>
+
+              <div class="social-media">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="container">
+        <p class="copyright text-ce">
+          Copyright © 2019
+          <a href="#">themeise.com</a>
+          . All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
